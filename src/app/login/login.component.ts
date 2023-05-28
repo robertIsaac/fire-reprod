@@ -1,6 +1,10 @@
 import { Component, inject } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/compat/auth';
-import firebase from 'firebase/compat/app';
+import {
+  Auth,
+  signInWithPopup,
+  GoogleAuthProvider,
+} from '@angular/fire/auth';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -8,12 +12,12 @@ import firebase from 'firebase/compat/app';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
-  private readonly fireAuth = inject(AngularFireAuth);
+  private readonly fireAuth = inject(Auth);
 
   constructor() {
   }
 
   async loginWithGoogle() {
-    await this.fireAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+    await signInWithPopup(this.fireAuth, new GoogleAuthProvider());
   }
 }

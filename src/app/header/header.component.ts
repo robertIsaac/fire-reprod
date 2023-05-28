@@ -1,13 +1,14 @@
 import { Component, inject } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { Auth, user } from '@angular/fire/auth';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  readonly fireAuth = inject(AngularFireAuth);
+  readonly fireAuth = inject(Auth);
+  readonly user = user(this.fireAuth);
 
   async logout() {
     await this.fireAuth.signOut();

@@ -1,4 +1,4 @@
-<button *ngIf="fireAuth.user | async; else loginLink" (click)="logout()">Logout</button>
+<button *ngIf="user | async; else loginLink" (click)="logout()">Logout</button>
 <ng-template #loginLink>
   <a routerLink="login">Login</a>
 </ng-template>
