@@ -1,0 +1,19 @@
+ng build --source-map
+- Generating browser application bundles (phase: setup)...    Components styles sourcemaps are not generated when styles optimization is enabled.
+√ Browser application bundle generation complete.
+√ Copying assets complete.
+√ Index html generation complete.
+
+Initial Chunk Files           | Names                |  Raw Size | Estimated Transfer Size
+main.367dff9e6e3d3d35.js      | main                 | 319.85 kB |                85.93 kB
+polyfills.ee075ffce6af53c7.js | polyfills            |  33.05 kB |                10.70 kB
+runtime.068ec833a4d5106a.js   | runtime              |   2.98 kB |                 1.42 kB
+styles.b45f7e627ac8cbce.css   | styles               |  55 bytes |                59 bytes
+
+                              | Initial Total        | 355.93 kB |                98.11 kB
+
+Lazy Chunk Files              | Names                |  Raw Size | Estimated Transfer Size
+379.d39f9d9b2ae4bdd3.js       | firebase-compat-auth | 133.06 kB |                30.88 kB
+823.cde30c4058fc56a0.js       | login-login-module   |   1.08 kB |               549 bytes
+
+Build at: 2023-05-28T00:59:45.836Z - Hash: e9e1d964504771aa - Time: 4955ms
