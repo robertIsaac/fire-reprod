@@ -1,0 +1,18 @@
+ng build --source-map
+- Generating browser application bundles (phase: setup)...    Components styles sourcemaps are not generated when styles optimization is enabled.
+√ Browser application bundle generation complete.
+√ Copying assets complete.
+√ Index html generation complete.
+
+Initial Chunk Files           | Names              |  Raw Size | Estimated Transfer Size
+main.d1142598169837eb.js      | main               | 378.79 kB |               100.58 kB
+polyfills.ee075ffce6af53c7.js | polyfills          |  33.05 kB |                10.70 kB
+runtime.d4eac41a7d2e412e.js   | runtime            |   2.69 kB |                 1.28 kB
+styles.b45f7e627ac8cbce.css   | styles             |  55 bytes |                59 bytes
+
+                              | Initial Total      | 414.58 kB |               112.62 kB
+
+Lazy Chunk Files              | Names              |  Raw Size | Estimated Transfer Size
+823.b508ae9647b7136a.js       | login-login-module |   1.05 kB |               536 bytes
+
+Build at: 2023-05-28T01:04:30.125Z - Hash: 9ba276dd4dd40856 - Time: 4623ms
